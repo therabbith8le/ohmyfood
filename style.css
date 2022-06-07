@@ -1,0 +1,80 @@
+/* GENERAL */
+
+html, body {
+    padding: 0px;
+    margin: 0px;
+}
+
+body, p {
+    font-family: "Roboto", Impact, "Arial black", Arial, Verdana, "sans-serif";
+}
+
+h4 {
+    font-family: "Shrikhand", Impact, "Arial black", Arial, Verdana, "sans-serif";
+}
+
+section {
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.around {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+h2 {
+    font-weight: bold;
+}
+
+/* HEADER */
+
+.header_height {
+    height: 50px;
+}
+
+.logo_size {
+    width: 196px;
+    height: 34px;
+}
+
+.logo_position {
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+/* MAIN LOCALISATION */
+
+.no_border {
+    border: none;
+}
+
+.local_position {
+    padding-right: 15px;
+}
+
+.search_position {
+    height: 50px;
+}
+
+.grey_background {
+    width: 100%;
+    background-color: rgb(233, 233, 233);
+}
+
+/* MAIN DESCRIPTION */
+
