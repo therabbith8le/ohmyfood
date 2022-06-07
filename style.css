@@ -9,8 +9,12 @@ body, p {
     font-family: "Roboto", Impact, "Arial black", Arial, Verdana, "sans-serif";
 }
 
-h4 {
+h3 {
     font-family: "Shrikhand", Impact, "Arial black", Arial, Verdana, "sans-serif";
+}
+
+ul li {
+	list-style-type: none;
 }
 
 section {
@@ -37,13 +41,35 @@ section {
     align-items: center;
 }
 
-h2 {
-    font-weight: bold;
+.no_top {
+    padding-top: 0px;
+    margin-top: 0px;
+}
+
+.no_bottomm {
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+}
+
+.grey {
+    color: rgb(89, 89, 89);
+}
+
+.color_primary {
+    color: #9356DC;
+}
+
+.color_secondary {
+    color: #FF79DA;
+}
+
+.color_tertiary {
+    color: #99E2D0;
 }
 
 /* HEADER */
 
-.header_height {
+header {
     height: 50px;
 }
 
@@ -78,3 +104,23 @@ h2 {
 
 /* MAIN DESCRIPTION */
 
+#explore {
+    height: 50px;
+    width: 250px;
+    border-radius: 30px;
+    color: white;
+    background-color: #FF79DA;
+}
+
+/* MAIN FONCTIONNEMENT */
+
+.bloc_functionning {
+    width: 100%;
+}
+
+.functionning_cards {
+    border: 1px solid black;
+    border-radius: 30px;
+    height: 100px;
+    width: 80%;
+}
