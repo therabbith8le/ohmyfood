@@ -125,7 +125,7 @@ header {
 
 #explore {
     height: 50px;
-    width: 250px;
+    width: 200px;
     border-radius: 30px;
     color: white;
     background-color: #FF79DA;
@@ -136,7 +136,7 @@ header {
 .functionning_cards {
     border-radius: 30px;
     height: 75px;
-    width: 375px;
+    width: 300px;
     justify-content: flex-start;
     box-shadow: 3px 3px 3px 3px #F2F2F2;
     margin-left: 10px;
@@ -182,5 +182,28 @@ header {
 }
 
 .restau_p {
+    margin: 0px;
+}
+
+/* FOOTER */
+
+footer {
+    height: 200px;
+    display: flex;
+    align-items: flex-start;
+    background-color: rgb(89, 89, 89);
+    color: white;
+}
+
+li {
+    padding-bottom: 5px;
+}
+
+li a {
+    color: white;
+}
+
+.footer_menu {
+    padding-left: 5%;
     margin: 0px;
 }
