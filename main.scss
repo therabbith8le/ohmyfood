@@ -81,10 +81,10 @@ header {
 .location {
     height: 50px;
     width: 100%;
-    location__logo--padding {
+    &__logo--padding {
         padding-right: 15px;
     }
-    location__form--border {
+    &__form--border {
         border: none;
     }
 }
@@ -97,16 +97,16 @@ header {
 /* MAIN INTRO */
 
 .intro {
-    intro__title {
+    &__title {
         padding-bottom: 0px;
         margin-bottom: 0px;
     }
-    intro__txt {
+    &__txt {
         margin-top: 0px;
         margin-bottom: 0px;
         color: rgb(89, 89, 89);
     }
-    btn {
+    &.btn {
         height: 50px;
         width: 200px;
         border: none;
@@ -129,7 +129,7 @@ header {
         justify-content: flex-start;
         box-shadow: 3px 3px 3px 3px #F2F2F2;
         margin-left: 10px;
-        functionning-cards__numbers {
+        &-cards__numbers {
             height: 25px;
             width: 25px;
             border-radius: 25px;
@@ -153,19 +153,19 @@ header {
         height: 325px;
         border-radius: 25px;
         box-shadow: 3px 3px 3px 3px #F2F2F2;
-        restau-cards--padding {
+        &-cards--padding {
             padding: 10px;
         }
-        restau-cards__img {
+        &-cards__img {
             object-fit: cover;
             width: 100%;
             height: 250px;
             border-radius: 25px 25px 0px 0px;
         }
-        restau-cards__txt {
+        &-cards__txt {
             margin: 0px;
         }
-        restau-cards__heart {
+        &-cards__heart {
             font-size: 25px;
             padding-right: 20px;
         }
@@ -185,9 +185,9 @@ footer {
 .footer-menu {
     padding-left: 5%;
     margin: 0px;
-    footer-menu__link {
+    &-menu__link {
         padding-bottom: 5px;
-        footer-menu__link a {
+        & a {
             color: white;
         }
     }
