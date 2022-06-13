@@ -1,0 +1,28 @@
+.header {
+    height: 50px;
+    &__heading {
+        width: 196px;
+        height: 34px;
+        margin-top: 20px;
+        margin-bottom: 10px;
+    }
+}
+
+footer {
+    height: 200px;
+    display: flex;
+    align-items: flex-start;
+    background-color: rgb(89, 89, 89);
+    color: white;
+}
+
+.footer-menu {
+    padding-left: 5%;
+    margin: 0px;
+    &__link {
+        padding-bottom: 5px;
+        & a {
+            color: white;
+        }
+    }
+}
