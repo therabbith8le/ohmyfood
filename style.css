@@ -56,20 +56,6 @@ section {
     align-items: center;
 }
 
-.no_top {
-    padding-top: 0px;
-    margin-top: 0px;
-}
-
-.no_bottomm {
-    padding-bottom: 0px;
-    margin-bottom: 0px;
-}
-
-.grey {
-    color: rgb(89, 89, 89);
-}
-
 .padding_bottom-cards {
     margin-bottom: 20px;
 }
@@ -87,7 +73,7 @@ header {
     margin-bottom: 10px;
 }
 
-/* MAIN LOCALISATION */
+/* MAIN LOCATION */
 
 .location {
     height: 50px;
@@ -107,14 +93,33 @@ header {
     border: none;
 }
 
-/* MAIN DESCRIPTION */
+/* MAIN INTRO */
 
-.btn-explore {
+.intro__title {
+    padding-bottom: 0px;
+    margin-bottom: 10px;
+    text-align: center;
+    font-size: 1.75em;
+}
+
+.intro__txt {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    color: rgb(89, 89, 89);
+    text-align: center;
+}
+
+.btn {
     height: 50px;
     width: 200px;
+    border: none;
     border-radius: 30px;
     color: white;
     background-color: #FF79DA;
+    font-size: 15px;
+    margin-top: 30px;
+    margin-bottom: 40.08px;
+    box-shadow: 3px 3px 3px 3px #F2F2F2;
 }
 
 /* MAIN FONCTIONNEMENT */
@@ -122,7 +127,7 @@ header {
 .functionning-cards {
     border-radius: 30px;
     height: 75px;
-    width: 300px;
+    width: 100%;
     justify-content: flex-start;
     box-shadow: 3px 3px 3px 3px #F2F2F2;
     margin-left: 10px;
@@ -139,6 +144,10 @@ header {
 
 .functionning-cards--margin {
     margin-left: 40px;
+}
+
+.cards-logo--color {
+    color: #9356DC;
 }
 
 /* MAIN RESTAURANTS */
@@ -181,15 +190,15 @@ footer {
     color: white;
 }
 
-.footer {
+.footer-menu {
     padding-left: 5%;
     margin: 0px;
 }
 
-.footer__link {
+.footer-menu__link {
     padding-bottom: 5px;
 }
 
-.footer__link a {
+.footer-menu__link a {
     color: white;
 }
