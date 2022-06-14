@@ -1,0 +1,160 @@
+html, body {
+    padding: 0px;
+    margin: 0px;
+}
+
+body, p {
+    font-family: "Roboto", Impact, "Arial black", Arial, Verdana, "sans-serif";
+}
+
+h1, h3 {
+    font-family: "Shrikhand", Impact, "Arial black", Arial, Verdana, "sans-serif";
+}
+
+h2 {
+    margin: 0px;
+    font-size: 1.2em;
+    font-weight: 1000;
+}
+
+a {
+	color: black;
+	text-decoration: none;
+}
+
+ul li {
+	list-style-type: none;
+}
+
+p {
+    color: rgb(89, 89, 89);
+    margin-top: 0;
+}
+
+section {
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.around {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.between {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+$color_primary: #9356DC;
+$color_secondary: #FF79DA;
+$color_tertiary: #99E2D0;
+
+$margin_bottom: 20px;
+
+@mixin box-shadow {
+    box-shadow: 3px 3px 3px 3px #F2F2F2;
+}
+
+.header {
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    &__heading {
+        width: 196px;
+        height: 34px;
+        padding-right: 75px;
+    }
+    &__logo {
+        font-size: 1.3em;
+    }
+}
+
+.pic {
+    &__img {
+        object-fit: cover;
+        height: 175px;
+        width: 100%;
+    }
+}
+
+.bloc {
+    border-radius: 30px;
+    margin-top: -30px;
+    &-heading{
+        font-size: 1.50em;
+    }
+    &__btn {
+        height: 50px;
+        width: 200px;
+        border: none;
+        color: white;
+        background-color: $color_secondary;
+        font-size: 15px;
+        margin-top: 30px;
+        margin-bottom: 60px;
+        border-radius: 30px;
+        @include box-shadow;
+    }
+}
+
+.titles {
+    border-bottom: 3px solid $color_tertiary;
+    font-size: 1.1em;
+}
+
+.cards {
+    height: 50px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    border-radius: 15px;
+    margin-bottom: $margin_bottom;
+    @include box-shadow;
+    &__recipes {
+        font-size: 0.9em;
+        padding-top: 5px;
+        margin-bottom: 0;
+    }
+    &__prices {
+        color: black;
+        font-weight: 1000;
+        margin-bottom: 0;
+    }
+}
+
+footer {
+    height: 200px;
+    display: flex;
+    align-items: flex-start;
+    background-color: rgb(89, 89, 89);
+    color: white;
+}
+
+.footer-menu {
+    padding-left: 5%;
+    margin: 0px;
+    &__link {
+        padding-bottom: 5px;
+        & a {
+            color: white;
+        }
+    }
+}
