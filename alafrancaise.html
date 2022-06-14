@@ -14,7 +14,7 @@
     <body>
 
         <header class="between header">
-            <div class="header__logo"><i class="fa-solid fa-arrow-left"></i></div>
+            <div ><i class="fa-solid fa-arrow-left header__logo"></i></div>
             <img src="assets/logo/ohmyfood.png" class="header__heading">
         </header>
 
@@ -25,16 +25,17 @@
             </div>
 
             <div class="bloc">
+
                 <section>
-                    <div class="between">
+                    <div class="between bloc-heading">
                         <h3>À la française</h3>
                         <i class="fa-solid fa-heart"></i>
                     </div>
                 </section>
 
                 <section>
-                    <div class="entries">
-                        <p>ENTREES</p>
+                    <p>ENTREES</p>
+                    <div class="column entries">
                         <div class="entries-cards">
                             <h2>Tartare de poulpe acidulé</h2>
                             <div class="between">
@@ -60,8 +61,8 @@
                 </section>
 
                 <section>
-                    <div class="dishes">
-                        <p>PLATS</p>
+                    <p>PLATS</p>
+                    <div class="column dishes">
                         <div class="dishes-cards">
                             <h2>Coquilles Saint-Jacques</h2>
                             <div class="between">
@@ -87,8 +88,8 @@
                 </section>
 
                 <section>
-                    <div class="desserts">
-                        <p>DESSERTS</p>
+                    <p>DESSERTS</p>
+                    <div class="column desserts">
                         <div class="desserts-cards">
                             <h2>Pétales de violettes glacés</h2>
                             <div class="between">
@@ -113,7 +114,9 @@
                     </div>
                 </section>
 
-                <a class="center bloc__btn" href="#">Commander</a>
+                <div class="center">
+                    <a class="bloc__btn center" href="#">Commander</a>
+                </div>
 
             </div>
 
