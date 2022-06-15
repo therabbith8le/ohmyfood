@@ -89,36 +89,74 @@ section {
 
 .header {
   height: 50px;
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-}
-
-.header__heading {
-  width: 196px;
-  height: 34px;
-  padding-right: 80px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .header__logo {
+  padding-left: 5%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.header__logo--size {
   font-size: 1.3em;
 }
 
-.pic__img {
+.header__heading--pic {
+  width: 196px;
+  height: 34px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.test {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.bloc__img {
+  overflow: auto;
+}
+
+.bloc__img--size {
   -o-object-fit: cover;
      object-fit: cover;
   height: 175px;
   width: 100%;
-}
-
-.bloc {
-  border-radius: 30px;
-  margin-top: -30px;
 }
 
 .bloc-heading {
@@ -139,8 +177,14 @@ section {
           box-shadow: 3px 3px 3px 3px #F2F2F2;
 }
 
-.titles {
-  border-bottom: 3px solid #99E2D0;
+hr {
+  height: 3px;
+  width: 40px;
+  border: none;
+  background-color: #99E2D0;
+  margin: 0;
+  margin-bottom: 20px;
+  margin-top: -15px;
 }
 
 .cards {
