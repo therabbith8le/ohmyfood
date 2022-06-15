@@ -119,7 +119,7 @@ $margin_bottom: 20px;
 }
 
 .cards {
-    height: 50px;
+    height: auto;
     width: 100%;
     align-items: center;
     justify-content: center;
@@ -127,6 +127,19 @@ $margin_bottom: 20px;
     border-radius: 15px;
     margin-bottom: $margin_bottom;
     @include box-shadow;
+    @media (min-width: 899px) {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        min-height: 95px;
+        width: 30%;
+    }
+    &__details {
+        @media (min-width: 899px) {
+            flex-direction: column;
+            align-items: flex-start;
+        }
+    }
     &__recipes {
         font-size: 0.9em;
         padding-top: 5px;
@@ -136,6 +149,17 @@ $margin_bottom: 20px;
         color: black;
         font-weight: 1000;
         margin-bottom: 0;
+        @media (min-width: 899px) {
+            padding-top: 5px;
+        }
+    }
+}
+
+.entries, .dishes, .desserts {
+    @media (min-width: 899px) {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
     }
 }
 

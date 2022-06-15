@@ -144,7 +144,7 @@ section {
 }
 
 .cards {
-  height: 50px;
+  height: auto;
   width: 100%;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -159,6 +159,35 @@ section {
           box-shadow: 3px 3px 3px 3px #F2F2F2;
 }
 
+@media (min-width: 899px) {
+  .cards {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    min-height: 95px;
+    width: 30%;
+  }
+}
+
+@media (min-width: 899px) {
+  .cards__details {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+}
+
 .cards__recipes {
   font-size: 0.9em;
   padding-top: 5px;
@@ -169,6 +198,26 @@ section {
   color: black;
   font-weight: 1000;
   margin-bottom: 0;
+}
+
+@media (min-width: 899px) {
+  .cards__prices {
+    padding-top: 5px;
+  }
+}
+
+@media (min-width: 899px) {
+  .entries, .dishes, .desserts {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
 }
 
 footer {
