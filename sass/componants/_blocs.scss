@@ -33,7 +33,7 @@
         width: 200px;
         border: none;
         color: white;
-        background-color: $color_secondary;
+        background-color: $color_primary;
         font-size: 15px;
         margin-top: 30px;
         margin-bottom: 40.08px;
@@ -45,14 +45,25 @@
 }
 
 .functionning {
+    @media (min-width: 972px) {
+        flex-direction: row;
+    }
     &-cards {
-        height: 75px;
+        height: auto;
         width: 100%;
         justify-content: flex-start;
         margin-left: 10px;
         border-radius: $border_radius;
         margin-bottom: $margin_bottom;
         @include box-shadow;
+        @media (min-width: 426px) {
+            width: 382.5px;
+        }
+        @media (min-width: 972px) {
+            justify-content: space-around;
+            align-items: center;
+            width: 33%;
+        }
         &__numbers {
             height: 25px;
             width: 25px;
@@ -60,12 +71,18 @@
             color: white;
             background-color: $color_primary;
             margin-left: -11px;
+            @media (min-width: 972px) {
+                margin-left: O;
+            }
         }
     }
 }
 
 .functionning-cards--margin {
     margin-left: 40px;
+    @media (min-width: 972px) {
+        margin-left: O;
+    }
 }
 
 .restau {
