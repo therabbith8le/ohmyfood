@@ -102,7 +102,7 @@ section {
 .header__heading {
   width: 196px;
   height: 34px;
-  padding-right: 75px;
+  padding-right: 80px;
 }
 
 .header__logo {
@@ -141,7 +141,6 @@ section {
 
 .titles {
   border-bottom: 3px solid #99E2D0;
-  font-size: 1.1em;
 }
 
 .cards {
