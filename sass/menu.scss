@@ -151,7 +151,7 @@ $margin_bottom: 20px;
         margin-bottom: 60px;
         border-radius: 30px;
         @include box-shadow(white);
-        & a:hover {
+        &:hover {
             background-color: $color_primary_light;
             @include box-shadow($color_intermediary);
         }

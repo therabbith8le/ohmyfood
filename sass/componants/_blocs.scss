@@ -1,18 +1,16 @@
 .location {
     height: 50px;
     width: 100%;
-    background-color: rgb(233, 233, 233);
+    background-color: $color_location;
     &__logo--padding {
         padding-right: 15px;
     }
-    &__form--border {
+    & input {
+        width: 100%;
         border: none;
+        background-color: $color_location;
+        text-align: center;
     }
-}
-
-.location .location__input {
-    width: 100%;
-    background-color: rgb(233, 233, 233);
 }
 
 .intro {
@@ -35,13 +33,17 @@
         color: white;
         background-color: $color_primary;
         font-size: 15px;
+        cursor: pointer;
         margin-top: 30px;
         margin-bottom: 40.08px;
         border-radius: $border_radius;
         @include box-shadow(white);
-        & a:hover {
+        transform: scale(1);
+        transition: transform 200ms;
+        &:hover {
             background-color: $color_primary_light;
             @include box-shadow($color_intermediary);
+            transform: scale(1.15);
         }
     }
 }
@@ -110,6 +112,9 @@
         &__heart {
             font-size: 25px;
             padding-right: 20px;
+            &:hover {
+
+            }
         }
     }
 }
