@@ -74,11 +74,12 @@ hr {
 $color_primary: #9356DC;
 $color_secondary: #FF79DA;
 $color_tertiary: #99E2D0;
+$color_intermediary: #898989;
 
 $margin_bottom: 20px;
 
-@mixin box-shadow {
-    box-shadow: 3px 3px 3px 3px #F2F2F2;
+@mixin box-shadow($color){
+    box-shadow: 3px 3px 3px 3px $color;
 }
 
 .header {
@@ -118,7 +119,7 @@ $margin_bottom: 20px;
     width: 100%;
     height: auto;
     border-radius: 30px;
-    background-color: grey;
+    background-color: $color_intermediary;
     &__img {
         overflow: auto;
         &--size {
@@ -148,7 +149,11 @@ $margin_bottom: 20px;
         margin-top: 30px;
         margin-bottom: 60px;
         border-radius: 30px;
-        @include box-shadow;
+        @include box-shadow(white);
+        & a:hover {
+            
+            @include box-shadow($color_intermediary);
+        }
     }
 }
 
@@ -160,7 +165,7 @@ $margin_bottom: 20px;
     padding: 10px;
     border-radius: 15px;
     margin-bottom: $margin_bottom;
-    @include box-shadow;
+    @include box-shadow(white);
     @media (min-width: 899px) {
         display: flex;
         flex-direction: column;
