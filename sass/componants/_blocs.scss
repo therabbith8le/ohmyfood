@@ -7,7 +7,7 @@
     }
     & input {
         width: 100%;
-        border: none;
+        border: 0;
         background-color: $color_location;
         text-align: center;
     }
@@ -39,7 +39,7 @@
         border-radius: $border_radius;
         @include box-shadow(white);
         transform: scale(1);
-        transition: transform 200ms;
+        transition: all transform 200ms, background-color 100ms 100ms;
         &:hover {
             background-color: $color_primary_light;
             @include box-shadow($color_intermediary);
@@ -112,9 +112,6 @@
         &__heart {
             font-size: 25px;
             padding-right: 20px;
-            &:hover {
-
-            }
         }
     }
 }

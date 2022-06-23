@@ -1,3 +1,15 @@
+$color_primary: #9356DC;
+$color_primary_light: lighten(#9356DC,10%);
+$color_secondary: #FF79DA;
+$color_tertiary: #99E2D0;
+$color_intermediary: #898989;
+
+$margin_bottom: 20px;
+
+@mixin box-shadow($color){
+    box-shadow: 3px 3px 3px 3px $color;
+}
+
 html, body {
     padding: 0px;
     margin: 0px;
@@ -6,6 +18,7 @@ html, body {
 body, p {
     font-family: "Roboto", Impact, "Arial black", Arial, Verdana, "sans-serif";
 }
+
 
 h1, h3 {
     font-family: "Shrikhand", Impact, "Arial black", Arial, Verdana, "sans-serif";
@@ -71,18 +84,6 @@ hr {
     align-items: center;
 }
 
-$color_primary: #9356DC;
-$color_primary_light: lighten(#9356DC,10%);
-$color_secondary: #FF79DA;
-$color_tertiary: #99E2D0;
-$color_intermediary: #898989;
-
-$margin_bottom: 20px;
-
-@mixin box-shadow($color){
-    box-shadow: 3px 3px 3px 3px $color;
-}
-
 .header {
     height: 50px;
     width: 100%;
@@ -120,9 +121,7 @@ $margin_bottom: 20px;
     width: 100%;
     height: auto;
     border-radius: 30px;
-    background-color: $color_intermediary;
     &__img {
-        overflow: auto;
         &--size {
         object-fit: cover;
         height: 175px;
@@ -132,7 +131,9 @@ $margin_bottom: 20px;
     &-heading {
         border-radius: 30px 30px 0 0;
         font-size: 1.50em;
-        background-color: #9356DC;
+
+        padding-left: 5%;
+        padding-right: 5%;
         &__title {
             padding-left: 5%;
         }
