@@ -31,7 +31,7 @@
         width: 200px;
         border: none;
         color: white;
-        background-color: $color_primary;
+        background-color: radial-gradient(ellipse, lighten($color_primary, 5) 0%, darken($color_primary, 10) 100%);
         position: relative;
         z-index: 1;
         font-size: 15px;
@@ -48,6 +48,7 @@
             }
         }
         &::after {
+            content: "";
             position: absolute;
             top: 0;
             right: 0;
