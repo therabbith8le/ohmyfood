@@ -43,11 +43,11 @@
         transform: scale(1);
         transition: all transform 200ms;
         &:hover {
-            & .intro__btn__bg {
+            &::after {
                 opacity: 1;
             }
         }
-        &__bg {
+        &::after {
             position: absolute;
             top: 0;
             right: 0;
