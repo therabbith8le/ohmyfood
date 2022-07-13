@@ -1,3 +1,22 @@
 @mixin box-shadow($color){
-    box-shadow: 3px 3px 3px 3px $color;
+    box-shadow: 1.5px 1.5px 3px 1.5px $color;
 }
+
+@keyframes progress-heart {
+    0% {
+        transform: scaleX(0);
+    }
+    17% {
+        transform: scaleX(.18);
+    }
+    24% {
+        transform: scaleX(.4);
+    }
+    46% {
+        transform: scaleX(.81);
+    }
+    100% {
+        transform: scaleX(1);
+    }
+}
+

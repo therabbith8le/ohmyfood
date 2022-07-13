@@ -1,3 +1,49 @@
+@-webkit-keyframes progress-heart {
+  0% {
+    -webkit-transform: scaleX(0);
+            transform: scaleX(0);
+  }
+  17% {
+    -webkit-transform: scaleX(0.18);
+            transform: scaleX(0.18);
+  }
+  24% {
+    -webkit-transform: scaleX(0.4);
+            transform: scaleX(0.4);
+  }
+  46% {
+    -webkit-transform: scaleX(0.81);
+            transform: scaleX(0.81);
+  }
+  100% {
+    -webkit-transform: scaleX(1);
+            transform: scaleX(1);
+  }
+}
+
+@keyframes progress-heart {
+  0% {
+    -webkit-transform: scaleX(0);
+            transform: scaleX(0);
+  }
+  17% {
+    -webkit-transform: scaleX(0.18);
+            transform: scaleX(0.18);
+  }
+  24% {
+    -webkit-transform: scaleX(0.4);
+            transform: scaleX(0.4);
+  }
+  46% {
+    -webkit-transform: scaleX(0.81);
+            transform: scaleX(0.81);
+  }
+  100% {
+    -webkit-transform: scaleX(1);
+            transform: scaleX(1);
+  }
+}
+
 .center {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -97,7 +143,7 @@ footer {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
-  background-color: #595959;
+  background-color: #898989;
   color: white;
 }
 
@@ -117,20 +163,18 @@ footer {
 .location {
   height: 50px;
   width: 100%;
-  background-color: #e9e9e9;
+  background-color: #E9E9E9;
 }
 
 .location__logo--padding {
   padding-right: 15px;
 }
 
-.location__form--border {
-  border: none;
-}
-
-.location .location__input {
+.location input {
   width: 100%;
-  background-color: #e9e9e9;
+  border: 0;
+  background-color: #E9E9E9;
+  text-align: center;
 }
 
 .intro__title {
@@ -143,7 +187,7 @@ footer {
 .intro__txt {
   margin-top: 0px;
   margin-bottom: 0px;
-  color: #595959;
+  color: #898989;
   text-align: center;
 }
 
@@ -153,14 +197,45 @@ footer {
   border: none;
   color: white;
   background-color: #9356DC;
+  position: relative;
+  z-index: 1;
   font-size: 15px;
+  cursor: pointer;
   margin-top: 30px;
   margin-bottom: 40.08px;
   border-radius: 30px;
-  -webkit-box-shadow: 3px 3px 3px 3px #F2F2F2;
-          box-shadow: 3px 3px 3px 3px #F2F2F2;
-  margin-top: 30px;
-  margin-bottom: 40.08px;
+  -webkit-box-shadow: 1.5px 1.5px 3px 1.5px #E9E9E9;
+          box-shadow: 1.5px 1.5px 3px 1.5px #E9E9E9;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  -webkit-transition: -webkit-transform 300ms;
+  transition: -webkit-transform 300ms;
+  transition: transform 300ms;
+  transition: transform 300ms, -webkit-transform 300ms;
+}
+
+.intro__btn:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+.intro__btn:hover::after {
+  opacity: 1;
+}
+
+.intro__btn::after {
+  border-radius: 30px;
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: #a16be0;
+  opacity: 0;
+  z-index: -1;
+  -webkit-transition: opacity 100ms;
+  transition: opacity 100ms;
 }
 
 @media (min-width: 972px) {
@@ -181,8 +256,8 @@ footer {
   margin-left: 10px;
   border-radius: 30px;
   margin-bottom: 20px;
-  -webkit-box-shadow: 3px 3px 3px 3px #F2F2F2;
-          box-shadow: 3px 3px 3px 3px #F2F2F2;
+  -webkit-box-shadow: 1.5px 1.5px 3px 1.5px #E9E9E9;
+          box-shadow: 1.5px 1.5px 3px 1.5px #E9E9E9;
 }
 
 @media (min-width: 426px) {
@@ -228,13 +303,12 @@ footer {
 }
 
 .restau-cards {
-  background-color: white;
   width: 100%;
   height: 325px;
   border-radius: 30px;
   margin-bottom: 20px;
-  -webkit-box-shadow: 3px 3px 3px 3px #F2F2F2;
-          box-shadow: 3px 3px 3px 3px #F2F2F2;
+  -webkit-box-shadow: 1.5px 1.5px 3px 1.5px #E9E9E9;
+          box-shadow: 1.5px 1.5px 3px 1.5px #E9E9E9;
 }
 
 .restau-cards--padding {
@@ -256,5 +330,13 @@ footer {
 .restau-cards__heart {
   font-size: 25px;
   padding-right: 20px;
+  color: #9356DC;
+}
+
+.restau-cards__heart:hover > .progress__heart {
+  -webkit-transform: scaleX(1);
+          transform: scaleX(1);
+  -webkit-animation-name: progress-heart 1000ms;
+          animation-name: progress-heart 1000ms;
 }
 /*# sourceMappingURL=main.css.map */

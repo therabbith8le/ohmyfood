@@ -2,6 +2,7 @@ $color_primary: #9356DC;
 $color_primary_light: lighten(#9356DC,10%);
 $color_secondary: #FF79DA;
 $color_tertiary: #99E2D0;
+$color_location: #E9E9E9;
 $color_intermediary: #898989;
 
 $margin_bottom: 20px;
@@ -121,22 +122,24 @@ hr {
     width: 100%;
     height: auto;
     border-radius: 30px;
+    position: relative;
+    z-index: 1;
+    border-radius: 15px 15px 0 0;
     &__img {
         &--size {
         object-fit: cover;
         height: 175px;
         width: 100%;
         }
+        &--position {
+            position: absolute;
+            z-index: -1;
+        }
     }
     &-heading {
         border-radius: 30px 30px 0 0;
-        font-size: 1.50em;
-
         padding-left: 5%;
         padding-right: 5%;
-        &__title {
-            padding-left: 5%;
-        }
         &__heart {
             padding-right: 5%;
         }
@@ -167,7 +170,7 @@ hr {
     padding: 10px;
     border-radius: 15px;
     margin-bottom: $margin_bottom;
-    @include box-shadow(white);
+    @include box-shadow($color_location);
     @media (min-width: 899px) {
         display: flex;
         flex-direction: column;
