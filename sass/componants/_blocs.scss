@@ -31,9 +31,7 @@
         width: 200px;
         border: none;
         color: white;
-        background-color: $color_primary;
-        position: relative;
-        z-index: 1;
+        background: linear-gradient(to bottom right, $color_secondary, $color_primary);
         font-size: 15px;
         cursor: pointer;
         margin-top: 30px;
@@ -95,6 +93,12 @@
                 margin-left: O;
             }
         }
+        &--detail1 {
+            background-color: lighten($primary_color,50%);
+        }
+        &--detail2 {
+            color: $primary_color;
+        }
     }
 }
 
@@ -125,18 +129,11 @@
             margin: 0px;
         }
         &__heart {
-            font-size: 25px;
             padding-right: 20px;
-            color: $color_primary;
-        }
-    }
-}
-
-.restau-cards__heart {
-    &:hover {
-        & > .progress__heart {
-            transform: scaleX(1);
-            animation-name: progress-heart 1000ms;
+            font-size: 1.5em;
+            -webkit-text-fill-color: white;
+            -webkit-text-stroke-width: 1px;
+            -webkit-text-stroke-color: black;
         }
     }
 }

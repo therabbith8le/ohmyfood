@@ -143,7 +143,7 @@ footer {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
-  background-color: #898989;
+  background-color: #3B3B3B;
   color: white;
 }
 
@@ -187,7 +187,7 @@ footer {
 .intro__txt {
   margin-top: 0px;
   margin-bottom: 0px;
-  color: #898989;
+  color: #3B3B3B;
   text-align: center;
 }
 
@@ -196,9 +196,8 @@ footer {
   width: 200px;
   border: none;
   color: white;
-  background-color: #9356DC;
-  position: relative;
-  z-index: 1;
+  background: -webkit-gradient(linear, left top, right bottom, from(#FF79DA), to(#9356DC));
+  background: linear-gradient(to bottom right, #FF79DA, #9356DC);
   font-size: 15px;
   cursor: pointer;
   margin-top: 30px;
@@ -328,15 +327,10 @@ footer {
 }
 
 .restau-cards__heart {
-  font-size: 25px;
   padding-right: 20px;
-  color: #9356DC;
-}
-
-.restau-cards__heart:hover > .progress__heart {
-  -webkit-transform: scaleX(1);
-          transform: scaleX(1);
-  -webkit-animation-name: progress-heart 1000ms;
-          animation-name: progress-heart 1000ms;
+  font-size: 1.5em;
+  -webkit-text-fill-color: white;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
 }
 /*# sourceMappingURL=main.css.map */
