@@ -13,6 +13,8 @@ h3 {
 
 h2 {
     margin: 0px;
+    font-size: 1.2em;
+    font-weight: 1000;
 }
 
 a {
@@ -24,7 +26,16 @@ ul li {
 	list-style-type: none;
 }
 
-section {
-    margin-left: 5%;
-    margin-right: 5%;
+p {
+    color: rgb(89, 89, 89);
+}
+
+hr {
+    height: 3px;
+    width: 40px;
+    border: none;
+    background-color: $color_tertiary;
+    margin: 0;
+    margin-bottom: 20px;
+    margin-top: -15px;
 }
