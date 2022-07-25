@@ -269,8 +269,6 @@ footer {
 
 @media (min-width: 972px) {
   .functionning-cards {
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
@@ -280,6 +278,7 @@ footer {
 
 .functionning-cards:hover {
   background-color: #f1eafb;
+  color: #9356DC;
 }
 
 .functionning-cards__numbers {
@@ -295,10 +294,6 @@ footer {
   .functionning-cards__numbers {
     margin-left: O;
   }
-}
-
-.functionning-cards--detail {
-  color: #9356DC;
 }
 
 .functionning-cards--margin {
@@ -419,6 +414,37 @@ footer {
   background: #ae80e5;
   -webkit-box-shadow: 1.5px 1.5px 3px 1.5px #3B3B3B;
           box-shadow: 1.5px 1.5px 3px 1.5px #3B3B3B;
+}
+
+.like-icon {
+  position: relative;
+  cursor: pointer;
+  height: 50px;
+  width: 50px;
+}
+
+.like-icon:hover {
+  color: #ff79da;
+}
+
+.like-icon .not-liked {
+  position: absolute;
+}
+
+.like-icon .liked {
+  position: absolute;
+  color: #ff79da;
+  z-index: 2;
+  background: -webkit-gradient(linear, left bottom, left top, from(#9356dc), to(#ff79da));
+  background: linear-gradient(0deg, #9356dc, #ff79da);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  opacity: 0;
+}
+
+.like-icon .liked:hover {
+  opacity: 1;
 }
 
 .cards {

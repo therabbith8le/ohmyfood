@@ -65,12 +65,12 @@
             width: 382.5px;
         }
         @media (min-width: 972px) {
-            justify-content: space-around;
             align-items: center;
             width: 33%;
         }
         &:hover {
             background-color: #f1eafb;
+            color: $color_primary;
         }
         &__numbers {
             height: 25px;
@@ -82,9 +82,6 @@
             @media (min-width: 972px) {
                 margin-left: O;
             }
-        }
-        &--detail {
-            color: $color_primary;
         }
     }
 }
@@ -183,6 +180,37 @@
             @include box-shadow($color_intermediary);
             }
      }
+}
+
+.like-icon {
+    position: relative;
+    cursor: pointer;
+    height: 50px;
+    width: 50px;
+}
+
+.like-icon:hover { 
+    color: #ff79da; 
+} 
+
+.like-icon .not-liked { 
+    position: absolute;
+} 
+
+.like-icon .liked { 
+    position: absolute; 
+    color: #ff79da; 
+    z-index: 2; 
+    background: -webkit-gradient(linear, left bottom, left top, from(#9356dc), to(#ff79da)); 
+    background: linear-gradient(0deg, #9356dc, #ff79da); 
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    opacity: 0; 
+} 
+    
+.like-icon .liked:hover { 
+    opacity: 1; 
 }
 
 .cards {
