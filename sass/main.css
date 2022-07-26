@@ -221,7 +221,7 @@ footer {
   cursor: pointer;
   margin-top: 30px;
   margin-bottom: 40.08px;
-  border-radius: 30px;
+  border-radius: 15px;
   -webkit-box-shadow: 1.5px 1.5px 3px 1.5px #E9E9E9;
           box-shadow: 1.5px 1.5px 3px 1.5px #E9E9E9;
   -webkit-transform: scale(1);
@@ -255,7 +255,7 @@ footer {
           justify-content: flex-start;
   background-color: #F5F5F5;
   margin-left: 10px;
-  border-radius: 30px;
+  border-radius: 15px;
   margin-bottom: 20px;
   -webkit-box-shadow: 1.5px 1.5px 3px 1.5px #E9E9E9;
           box-shadow: 1.5px 1.5px 3px 1.5px #E9E9E9;
@@ -309,8 +309,9 @@ footer {
 .restau-cards {
   width: 100%;
   height: 325px;
-  border-radius: 30px;
+  border-radius: 15px;
   margin-bottom: 20px;
+  position: relative;
   -webkit-box-shadow: 1.5px 1.5px 3px 1.5px #E9E9E9;
           box-shadow: 1.5px 1.5px 3px 1.5px #E9E9E9;
 }
@@ -319,12 +320,34 @@ footer {
   padding: 10px;
 }
 
+.restau-cards__new {
+  height: 30px;
+  width: 100px;
+  border-radius: 3px;
+  background-color: #85dcc7;
+  color: #278870;
+  font-weight: bold;
+  position: absolute;
+  z-index: 1;
+  top: 15px;
+  right: 15px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+}
+
 .restau-cards__img {
   -o-object-fit: cover;
      object-fit: cover;
+  position: relative;
   width: 100%;
   height: 250px;
-  border-radius: 30px 30px 0px 0px;
+  border-radius: 15px 15px 0px 0px;
+  -webkit-border-radius: 15px 15px 0px 0px;
+  -moz-border-radius: 15px 15px 0px 0px;
+  -ms-border-radius: 15px 15px 0px 0px;
+  -o-border-radius: 15px 15px 0px 0px;
 }
 
 .restau-cards__txt {
