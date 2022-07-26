@@ -474,6 +474,23 @@ footer {
   }
 }
 
+.cards:hover > .cards__check {
+  height: 57px;
+  width: 50px;
+  -webkit-transition-property: width;
+  transition-property: width;
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+}
+
+.cards:hover .cards__checkicon {
+  color: white;
+  -webkit-transform: rotate(-180deg);
+  transform: rotate(-180deg);
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+}
+
 .cards__check {
   font-size: 1.5em;
   color: white;
@@ -487,15 +504,6 @@ footer {
   -o-border-radius: 0 15px 15px 0;
 }
 
-.cards__check:hover {
-  height: 57px;
-  width: 50px;
-  -webkit-transition-property: width;
-  transition-property: width;
-  -webkit-transition-duration: 0.5s;
-  transition-duration: 0.5s;
-}
-
 @media (min-width: 899px) {
   .cards__check {
     min-height: 95px;
@@ -507,14 +515,6 @@ footer {
 .cards__checkicon {
   color: transparent;
   height: 27px;
-}
-
-.cards__checkicon:hover {
-  color: white;
-  -webkit-transform: rotate(-180deg);
-  transform: rotate(-180deg);
-  -webkit-transition-duration: 0.5s;
-  transition-duration: 0.5s;
 }
 
 @media (min-width: 899px) {
