@@ -311,6 +311,7 @@ footer {
   height: 325px;
   border-radius: 30px;
   margin-bottom: 20px;
+  position: relative;
   -webkit-box-shadow: 1.5px 1.5px 3px 1.5px #E9E9E9;
           box-shadow: 1.5px 1.5px 3px 1.5px #E9E9E9;
 }
@@ -319,12 +320,34 @@ footer {
   padding: 10px;
 }
 
+.restau-cards__new {
+  height: 30px;
+  width: 100px;
+  border-radius: 3px;
+  background-color: #85dcc7;
+  color: #278870;
+  font-weight: bold;
+  position: absolute;
+  z-index: 1;
+  top: 15px;
+  right: 15px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+}
+
 .restau-cards__img {
   -o-object-fit: cover;
      object-fit: cover;
+  position: relative;
   width: 100%;
   height: 250px;
-  border-radius: 30px 30px 0px 0px;
+  border-radius: 15px 15px 0px 0px;
+  -webkit-border-radius: 15px 15px 0px 0px;
+  -moz-border-radius: 15px 15px 0px 0px;
+  -ms-border-radius: 15px 15px 0px 0px;
+  -o-border-radius: 15px 15px 0px 0px;
 }
 
 .restau-cards__txt {
@@ -449,7 +472,7 @@ footer {
 }
 
 .cards {
-  height: auto;
+  height: 57px;
   width: 100%;
   border-radius: 15px;
   margin-bottom: 20px;
@@ -462,14 +485,10 @@ footer {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: flex-start;
-    min-height: 95px;
+    min-height: 70px;
     width: 30%;
   }
 }
@@ -485,10 +504,13 @@ footer {
 
 .cards:hover .cards__checkicon {
   color: white;
-  -webkit-transform: rotate(-180deg);
-  transform: rotate(-180deg);
+  -webkit-transform: rotate(-360deg);
+  transform: rotate(-360deg);
   -webkit-transition-duration: 0.5s;
   transition-duration: 0.5s;
+  -moz-transform: rotate(-360deg);
+  -ms-transform: rotate(-360deg);
+  -o-transform: rotate(-360deg);
 }
 
 .cards__check {
@@ -506,7 +528,7 @@ footer {
 
 @media (min-width: 899px) {
   .cards__check {
-    min-height: 95px;
+    min-height: 70px;
     -ms-flex-item-align: end;
         align-self: flex-end;
   }
