@@ -114,7 +114,6 @@
             padding-top: 5px;
         }
         &__heart {
-            padding-right: 20px;
             font-size: 1.5em;
             -webkit-text-fill-color: white;
             -webkit-text-stroke-width: 1px;
@@ -191,6 +190,7 @@
 
 .like-icon:hover { 
     color: #ff79da; 
+    -webkit-text-stroke-width: 0;
 } 
 
 .like-icon .not-liked { 
@@ -205,12 +205,13 @@
     background: linear-gradient(0deg, #9356dc, #ff79da); 
     -webkit-background-clip: text;
     background-clip: text;
-    -webkit-text-fill-color: transparent; 
-    opacity: 0; 
+    -webkit-text-fill-color: transparent;
+    opacity: 0;
 } 
     
 .like-icon .liked:hover { 
-    opacity: 1; 
+    opacity: 1;
+    -webkit-text-stroke-width: 0;
 }
 
 .cards {
@@ -226,20 +227,39 @@
         min-height: 95px;
         width: 30%;
     }
-    &:hover {
-        padding: 0;
-    }
     &__check {
         font-size: 1.5em;
         color: white;
         background-color: lighten(#99E2D0, 10%);
-        height: 57px;
-        width: 50px;
+        height: 0;
+        width: 0;
         border-radius: 0 15px 15px 0;
         -webkit-border-radius: 0 15px 15px 0;
         -moz-border-radius: 0 15px 15px 0;
         -ms-border-radius: 0 15px 15px 0;
         -o-border-radius: 0 15px 15px 0;
+        &:hover {
+            height: 57px;
+            width: 50px;
+            transition-property: width;
+            -webkit-transition-duration: 0.5s;
+            transition-duration: 0.5s;
+        }
+        @media (min-width: 899px) {
+            min-height: 95px;
+            align-self: flex-end;
+        }
+    }
+    &__checkicon {
+        color: transparent;
+        height: 27px;
+        &:hover {
+            color: white;
+            -webkit-transform: rotate(-180deg); 
+            transform: rotate(-180deg); 
+            -webkit-transition-duration: 0.5s; 
+            transition-duration: 0.5s;
+        }
     }
     &__details {
         @media (min-width: 899px) {
