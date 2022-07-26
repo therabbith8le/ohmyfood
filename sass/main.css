@@ -449,7 +449,7 @@ footer {
 }
 
 .cards {
-  height: auto;
+  height: 57px;
   width: 100%;
   border-radius: 15px;
   margin-bottom: 20px;
@@ -462,14 +462,10 @@ footer {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: flex-start;
-    min-height: 95px;
+    min-height: 70px;
     width: 30%;
   }
 }
@@ -485,10 +481,13 @@ footer {
 
 .cards:hover .cards__checkicon {
   color: white;
-  -webkit-transform: rotate(-180deg);
-  transform: rotate(-180deg);
+  -webkit-transform: rotate(-360deg);
+  transform: rotate(-360deg);
   -webkit-transition-duration: 0.5s;
   transition-duration: 0.5s;
+  -moz-transform: rotate(-360deg);
+  -ms-transform: rotate(-360deg);
+  -o-transform: rotate(-360deg);
 }
 
 .cards__check {
@@ -506,7 +505,7 @@ footer {
 
 @media (min-width: 899px) {
   .cards__check {
-    min-height: 95px;
+    min-height: 70px;
     -ms-flex-item-align: end;
         align-self: flex-end;
   }
