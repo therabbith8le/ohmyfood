@@ -488,7 +488,7 @@ footer {
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: flex-start;
-    min-height: 70px;
+    min-height: 90px;
     width: 30%;
   }
 }
@@ -528,7 +528,7 @@ footer {
 
 @media (min-width: 899px) {
   .cards__check {
-    min-height: 70px;
+    min-height: 90px;
     -ms-flex-item-align: end;
         align-self: flex-end;
   }

@@ -245,7 +245,7 @@
     @media (min-width: 899px) {
         display: flex;
         align-items: flex-start;
-        min-height: 70px;
+        min-height: 90px;
         width: 30%;
     }
     &:hover > .cards__check {
@@ -277,7 +277,7 @@
         -ms-border-radius: 0 15px 15px 0;
         -o-border-radius: 0 15px 15px 0;
         @media (min-width: 899px) {
-            min-height: 70px;
+            min-height: 90px;
             align-self: flex-end;
         }
     }
