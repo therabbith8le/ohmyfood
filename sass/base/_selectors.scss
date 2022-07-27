@@ -28,6 +28,8 @@ ul li {
 
 p {
     color: rgb(89, 89, 89);
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 hr {

@@ -141,6 +141,9 @@
             -webkit-text-stroke-width: 1px;
             -webkit-text-stroke-color: black;
         }
+        &__detail {
+            margin-bottom: 60px;
+        }
     }
 }
 
@@ -238,14 +241,20 @@
 
 .cards {
     height: 57px;
+    text-overflow: ellipsis;
     width: 100%;
     border-radius: 15px;
     margin-bottom: $margin_bottom;
     @include box-shadow($color_location);
+    overflow: hidden;
+    @media (max-width: 320px) {
+        min-height: 70px;
+    }
     @media (min-width: 899px) {
         display: flex;
-        align-items: flex-start;
-        min-height: 90px;
+        justify-content: center;
+        align-items: center;
+        min-height: 110px;
         width: 30%;
     }
     &:hover > .cards__check {
@@ -276,8 +285,11 @@
         -moz-border-radius: 0 15px 15px 0;
         -ms-border-radius: 0 15px 15px 0;
         -o-border-radius: 0 15px 15px 0;
+        @media (max-width: 320px) {
+            min-height: 70px;
+        }
         @media (min-width: 899px) {
-            min-height: 90px;
+            min-height: 110px;
             align-self: flex-end;
         }
     }
@@ -307,6 +319,11 @@
         margin: 0;
         @media (min-width: 899px) {
             padding-top: 5px;
+        }
+    }
+    &--detail {
+        @media (min-width: 899px) {
+            width: 22%;
         }
     }
 }
