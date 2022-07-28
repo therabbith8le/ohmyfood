@@ -73,7 +73,7 @@ h2 {
   font-weight: 1000;
 }
 
-@media screen and (max-width: 352px) {
+@media screen and (max-width: 380px) {
   h2 {
     width: 200px;
     white-space: nowrap;
@@ -84,7 +84,7 @@ h2 {
 
 @media screen and (min-width: 899px) and (max-width: 1603px) {
   h2 {
-    width: 150px;
+    width: 130px;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -308,19 +308,25 @@ footer {
   margin-left: -11px;
 }
 
-@media (min-width: 972px) {
-  .functionning-cards__numbers {
-    margin-left: O;
-  }
-}
-
 .functionning-cards--margin {
   margin-left: 40px;
 }
 
-@media (min-width: 972px) {
+@media screen and (min-width: 972px) {
   .functionning-cards--margin {
-    margin-left: O;
+    margin-left: 0px;
+  }
+}
+
+@media screen and (min-width: 972px) {
+  .functionning-cards--padding {
+    padding-right: 20px;
+  }
+}
+
+@media screen and (min-width: 972px) {
+  .functionning-cards--detail {
+    margin-left: 20px;
   }
 }
 
@@ -599,7 +605,7 @@ footer {
 
 @media screen and (min-width: 899px) and (max-width: 1603px) {
   .cards__recipes {
-    width: 150px;
+    width: 130px;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;

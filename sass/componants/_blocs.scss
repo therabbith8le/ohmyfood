@@ -79,17 +79,23 @@
             color: white;
             background-color: $color_primary;
             margin-left: -11px;
-            @media (min-width: 972px) {
-                margin-left: O;
+        }
+        &--margin {
+            margin-left: 40px;
+            @media screen and (min-width: 972px) {
+                margin-left: 0px;
             }
         }
-    }
-}
-
-.functionning-cards--margin {
-    margin-left: 40px;
-    @media (min-width: 972px) {
-        margin-left: O;
+        &--padding {
+            @media screen and (min-width: 972px) {
+                padding-right: 20px;
+            }
+        }
+        &--detail {
+            @media screen and (min-width: 972px) {
+                margin-left: 20px;
+            }
+        }
     }
 }
 
@@ -311,7 +317,7 @@
             text-overflow: ellipsis; 
         }
         @media screen and (min-width: 899px) and (max-width: 1603px) {
-            width: 150px;
+            width: 130px;
             white-space: nowrap;
             overflow: hidden;
             text-overflow: ellipsis; 

@@ -15,14 +15,14 @@ h2 {
     margin: 0px;
     font-size: 1.2em;
     font-weight: 1000;
-    @media screen and (max-width: 352px) {
+    @media screen and (max-width: 380px) {
         width: 200px;
         white-space: nowrap;
         overflow: hidden;
         text-overflow: ellipsis; 
     }
     @media screen and (min-width: 899px) and (max-width: 1603px) {
-        width: 150px;
+        width: 130px;
         white-space: nowrap;
         overflow: hidden;
         text-overflow: ellipsis; 
