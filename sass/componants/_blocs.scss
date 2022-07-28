@@ -232,7 +232,7 @@
     background-clip: text;
     -webkit-text-fill-color: transparent;
     opacity: 0;
-} 
+}
     
 .like-icon .liked:hover { 
     opacity: 1;
@@ -241,16 +241,11 @@
 
 .cards {
     height: 57px;
-    text-overflow: ellipsis;
     width: 100%;
     border-radius: 15px;
     margin-bottom: $margin_bottom;
     @include box-shadow($color_location);
-    overflow: hidden;
-    @media (max-width: 320px) {
-        min-height: 70px;
-    }
-    @media (min-width: 899px) {
+    @media screen and (min-width: 899px) {
         display: flex;
         justify-content: center;
         align-items: center;
@@ -273,7 +268,7 @@
         -moz-transform: rotate(-360deg);
         -ms-transform: rotate(-360deg);
         -o-transform: rotate(-360deg);
-}
+    }
     &__check {
         font-size: 1.5em;
         color: white;
@@ -285,9 +280,6 @@
         -moz-border-radius: 0 15px 15px 0;
         -ms-border-radius: 0 15px 15px 0;
         -o-border-radius: 0 15px 15px 0;
-        @media (max-width: 320px) {
-            min-height: 70px;
-        }
         @media (min-width: 899px) {
             min-height: 110px;
             align-self: flex-end;
@@ -312,11 +304,24 @@
         font-size: 0.9em;
         padding-top: 5px;
         margin: 0;
+        @media screen and (max-width: 394px) {
+            width: 200px;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis; 
+        }
+        @media screen and (min-width: 899px) and (max-width: 1603px) {
+            width: 150px;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis; 
+        }
     }
     &__prices {
         color: black;
         font-weight: 1000;
         margin: 0;
+        padding-top: 5px;
         @media (min-width: 899px) {
             padding-top: 5px;
         }
