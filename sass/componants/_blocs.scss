@@ -246,7 +246,7 @@
 }
 
 .cards {
-    height: 57px;
+    height: 70px;
     width: 100%;
     border-radius: 15px;
     margin-bottom: $margin_bottom;
@@ -259,7 +259,7 @@
         width: 30%;
     }
     &:hover > .cards__check {
-        height: 57px;
+        height: 70px;
         width: 50px;
         transition-property: width;
         -webkit-transition-duration: 0.5s;
@@ -274,6 +274,34 @@
         -moz-transform: rotate(-360deg);
         -ms-transform: rotate(-360deg);
         -o-transform: rotate(-360deg);
+    }
+    &:hover .cards__recipes {
+        @media screen and (max-width: 394px) {
+            width: 200px;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis; 
+        }
+        @media screen and (min-width: 899px) and (max-width: 1603px) {
+            width: 130px;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis; 
+        }
+    }
+    &:hover h2 {
+        @media screen and (max-width: 380px) {
+            width: 200px;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis; 
+        }
+        @media screen and (min-width: 899px) and (max-width: 1603px) {
+            width: 130px;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis; 
+        }
     }
     &__check {
         font-size: 1.5em;
@@ -310,18 +338,6 @@
         font-size: 0.9em;
         padding-top: 5px;
         margin: 0;
-        @media screen and (max-width: 394px) {
-            width: 200px;
-            white-space: nowrap;
-            overflow: hidden;
-            text-overflow: ellipsis; 
-        }
-        @media screen and (min-width: 899px) and (max-width: 1603px) {
-            width: 130px;
-            white-space: nowrap;
-            overflow: hidden;
-            text-overflow: ellipsis; 
-        }
     }
     &__prices {
         color: black;

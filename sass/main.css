@@ -73,24 +73,6 @@ h2 {
   font-weight: 1000;
 }
 
-@media screen and (max-width: 380px) {
-  h2 {
-    width: 200px;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-  }
-}
-
-@media screen and (min-width: 899px) and (max-width: 1603px) {
-  h2 {
-    width: 130px;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-  }
-}
-
 a {
   color: black;
   text-decoration: none;
@@ -500,7 +482,7 @@ footer {
 }
 
 .cards {
-  height: 57px;
+  height: 70px;
   width: 100%;
   border-radius: 15px;
   margin-bottom: 20px;
@@ -525,7 +507,7 @@ footer {
 }
 
 .cards:hover > .cards__check {
-  height: 57px;
+  height: 70px;
   width: 50px;
   -webkit-transition-property: width;
   transition-property: width;
@@ -542,6 +524,42 @@ footer {
   -moz-transform: rotate(-360deg);
   -ms-transform: rotate(-360deg);
   -o-transform: rotate(-360deg);
+}
+
+@media screen and (max-width: 394px) {
+  .cards:hover .cards__recipes {
+    width: 200px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+}
+
+@media screen and (min-width: 899px) and (max-width: 1603px) {
+  .cards:hover .cards__recipes {
+    width: 130px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  .cards:hover h2 {
+    width: 200px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+}
+
+@media screen and (min-width: 899px) and (max-width: 1603px) {
+  .cards:hover h2 {
+    width: 130px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
 }
 
 .cards__check {
@@ -592,24 +610,6 @@ footer {
   font-size: 0.9em;
   padding-top: 5px;
   margin: 0;
-}
-
-@media screen and (max-width: 394px) {
-  .cards__recipes {
-    width: 200px;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-  }
-}
-
-@media screen and (min-width: 899px) and (max-width: 1603px) {
-  .cards__recipes {
-    width: 130px;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-  }
 }
 
 .cards__prices {
