@@ -11,7 +11,7 @@
     visibility: hidden;
 }
   
-.loader .loader-circle {
+.loader-circle {
     border: 10px solid #9356dc;
     border-top: 10px solid #99e2d0;
     border-bottom: 10px solid #ff79da;
@@ -36,28 +36,6 @@
 @keyframes spin {
     0% {transform: rotate(0deg);}
     100% {transform: rotate(360deg);}
-}
-
-@-webkit-keyframes spin {
-  0% {
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
-  }
-  100% {
-    -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
-  }
-}
-
-@keyframes spin {
-  0% {
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
-  }
-  100% {
-    -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
-  }
 }
 
 @-webkit-keyframes hide-spinner {

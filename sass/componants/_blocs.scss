@@ -224,11 +224,11 @@
     -webkit-text-stroke-width: 0;
 } 
 
-.like-icon .not-liked { 
+.not-liked { 
     position: absolute;
 } 
 
-.like-icon .liked { 
+.liked { 
     position: absolute; 
     color: #ff79da; 
     z-index: 2; 
@@ -240,7 +240,7 @@
     opacity: 0;
 }
     
-.like-icon .liked:hover { 
+.liked:hover { 
     opacity: 1;
     -webkit-text-stroke-width: 0;
 }
